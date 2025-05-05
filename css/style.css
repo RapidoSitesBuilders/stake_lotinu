@@ -1,0 +1,149 @@
+
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background-color: #000000;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+    }
+
+    .center-box {
+      background-color: #111111;
+      border: 2px solid #FFC400;
+      border-radius: 16px;
+      padding: 32px;
+      margin: 40px auto;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 0 25px #FFC40050;
+    }
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFC400; /* Yellow background */
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #000000; /* Black border */
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000; /* Black logo text */
+}
+
+.navbar button {
+  background-color: #000000; /* Black background */
+  border: none;
+  color: #FFC400; /* Yellow text for contrast */
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar button:hover {
+  background-color: #FF9900; /* Rich orange-yellow on hover */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.05);
+}
+
+
+.center-box {
+  max-width: 400px;
+  margin: 80px auto;
+  background-color: #000000; /* Deep black background */
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.center-box h2 {
+  margin-bottom: 20px;
+  color: #FFC400; /* Bright golden yellow */
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.8rem;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.action-buttons button,
+.claim-button {
+  background-color: #FFC400;
+  color: #000000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 10px 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Fredoka', sans-serif;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.action-buttons button:hover,
+.claim-button:hover {
+  background-color: #FF9900;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.bounce {
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+
+footer {
+      background-color: #11111100;
+      color: #FFC400;
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #FFC400;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #FF9900;
+    }
+
+    .staking-title {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Fredoka', sans-serif;
+  color: #FFC400; /* Golden color for the title */
+  font-size: 2rem;
+  margin-top: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LOTINU STAKING</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="./logo.png" alt="BSC Staking Logo" style="width: 40px; height: 40px; margin-right: 10px; vertical-align: middle;">
+      LOTINU 
+    </div>
+    <button id="connectWallet" onclick="connectWallet()">Connect Wallet</button>
+  </div>
+
+
+  <div class="staking-title">
+    LOTINU STAKING
+  </div>
+  <div class="center-box" id="stakingBox">
+    <h2>
+        <img src="./logostake.png" alt="Logo" class="bounce" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">
+         20% APY 
+      </h2>
+      
+      <div id="networkStatus" style="margin-bottom:10px; font-weight:bold;"></div>
+    <input id="stakeInput" placeholder="Enter amount to stake" />
+
+    <div class="action-buttons">
+      <button onclick="stakeTokens()">Stake</button>
+      <button onclick="unstakeTokens()">Unstake</button>
+    </div>
+
+    <div id="stakeInfo">
+      <p><strong>Token Balance:</strong> <span id="tokenBalance">0</span> LOTINU</p>
+      <p><strong>Staked:</strong> <span id="stakedAmount">0</span> LOTINU</p>
+      <p><strong>Rewards:</strong> <span id="rewardAmount">0</span> LOTINU</p>
+      <button class="claim-button" onclick="claimRewards()">Claim Rewards</button>
+    </div>
+  </div>
+
+   <!-- Footer -->
+   <footer>
+    <p>&copy; 2025 Lotinu Staking. All Rights Reserved.</p>
+  </footer>
+
+  
+</body>
+</html>
